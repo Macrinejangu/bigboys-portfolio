@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #111;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #ff0000;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+  border-bottom: 1px solid #eee;
+}
+
+h1, h2, h3 {
+  color: #000;
+}
+
+h2 {
+  border-left: 5px solid red;
+  padding-left: 10px;
+  margin-top: 2rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #b30000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Cast & Crew Profile Cards */
+.profile {
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 2rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.profile-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #111;
+}
+
+.profile-content h3 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.profile-content p {
+  color: #ccc;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile img {
+    width: 100%;
+  }
+
+  .profile-content {
+    padding: 1rem;
+  }
+
+  .profile-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .profile-content p {
+    font-size: 0.95rem;
+  }
+}
